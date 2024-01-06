@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6c752458a6.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .fluid-container    {
+            width:100vw;
+            height: 100vh;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width:300px;
+            height:500px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 10px 10px 20px #000;
+            display: flex;
+            padding:10px;
+
+        }
+        .content-wrapper {
+            background-color: rgb(241, 169, 35);
+            width:100%;
+        }
+        header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .categories {
+            display: flex;
+            flex-flow: row wrap;
+            row-gap: 5px;
+            justify-content: space-around;
+        }
+        .cards {
+            width:23%;
+            height:70px;
+            background: #fff;
+        }
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+        }
+
+        .search input {
+            width:70%;
+            padding:5px 20px;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        .fa-classic, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fal, .far, .fas, .fat {
+    font-family: "Font Awesome 5 Free";
+}
+        .fa-bars::before {
+            content: '\f0c9';
+        }
+
+        .cards img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fluid-container">
+
+        <div class="container">
+
+
+                <div class="content-wrapper">
+
+                    <header>
+
+                        <div class="logo">
+                            <h2>LOGO</h2>
+                        </div>
+
+                        <div class="menu">
+                            <i class="fa-solid fa-bars"></i>
+                           <img src="bars-solid.svg" alt="">
+                        </div>
+
+                    </header>
+
+                    <div class="slider">
+
+                        <div class="slider-wrapper">
+                            <img src="nike.png" style="width:100%;" alt="">
+                        </div>
+                    </div>
+
+                    <div class="search">
+
+                            <input type="text" >
+
+                    </div>
+
+                    <div class="categories">
+                       
+                        <div class="cards">
+                            <img src="images/service-thumb.jpg" alt="">
+                        </div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
