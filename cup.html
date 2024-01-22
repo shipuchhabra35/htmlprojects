@@ -1,0 +1,84 @@
+
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+        
+        }
+        body{
+            background-color: gray;
+        }
+        .container{
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cup{
+    height: 250px;
+    width: 210px;
+    background: white;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    position: relative;
+    z-index: 1;
+}
+.inside{
+    height: 50px;
+    width: 210px;
+    background: blue;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 224px;
+}
+.inside::before{
+    content: '';
+    height: 50px;
+    width: 210px;
+    position: absolute;
+    border-radius: 50%;
+    background: brown;
+}
+.handle{
+    height: 129px;
+    width: 120px;
+    border: 20px solid white;
+    position: absolute;
+    bottom: 109px;
+    right: -59px;
+    border-top: transparent;
+    border-radius: 50%;
+    rotate: -88deg;
+    top: 40px;
+}
+.plate{
+    height: 210px;
+    width: 330px;
+    position: absolute;
+    background: azure;
+    border-radius: 50%;
+    bottom: 180px;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cup">
+          <div class="inside">
+                
+          </div>
+          <div class="handle"></div>
+        </div>
+        <div class="plate"></div>
+    </div>
+    
+</body>
+</html>
